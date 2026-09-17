@@ -1,0 +1,179 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    background-image: url(./assets/Background\ 2.png);
+    /* Centraliza a imagem na tela */
+    background-position: center;
+    /* Evita que a imagem fique se duplicando (lado a lado) */
+    background-repeat: no-repeat;
+    /* Redimensiona a imagem proporcionalmente para cobrir todo o espaço */
+    background-size: cover;
+    /* Opcional: mantém o fundo fixo ao rolar a página */
+    background-attachment: fixed;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-sorteador {
+    background-color: #62616175;
+    border: 0.125rem solid blanchedalmond;
+    /* 2px equivalente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    /* 400px equivalente */
+    padding: 1.5rem;
+    /* 24px equivalente */
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    /* Medidas e limites laterais */
+    max-width: calc(100% - 40px);
+    /* Garante margens laterais mínimas em telas pequenas */
+    box-sizing: border-box;
+    /* Inclui o padding no cálculo da largura */
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+
+}
+
+#logo {
+    width: 400px;
+    height: 300px;
+    margin: 5px 728px 15px 728px;
+}
+
+#paragraph-main {
+
+    font-weight: 400;
+    font-size: 25px;
+    width: max-content;
+    height: 30px;
+    letter-spacing: 0px;
+    line-height: 100%;
+    margin: 10px 803px 29px 803px;
+    text-transform: uppercase;
+    color: #fff;
+    /* Efeito de brilho neon */
+    text-shadow: 0 0 5px #00f2fe, 0 0 10px #00f2fe, 0 0 20px #4facfe;
+    letter-spacing: 1px;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Espaço entre os elementos */
+}
+
+#and {
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: #fff;
+    /* Efeito de brilho neon */
+    text-shadow: 0 0 5px #00f2fe, 0 0 10px #00f2fe, 0 0 20px #4facfe;
+    letter-spacing: 1px;
+}
+
+#input-min,
+#input-max {
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    font-size: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+/* Chrome, Safari, Edge e Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Boa prática para futuras padronizações */
+}
+
+#btn-sortear {
+    margin: 20px 0;
+    /* Cores e Fundo */
+    background-color: #3498db;
+    /* Azul */
+    color: #ffffff;
+    /* Texto branco */
+
+    /* Tamanho e Espaçamento */
+    padding: 12px 24px;
+    /* Espaço interno (vertical e horizontal) */
+    font-size: 16px;
+    /* Tamanho do texto */
+    font-weight: bold;
+    /* Texto em negrito */
+
+    /* Bordas e Formato */
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 8px;
+    /* Arredonda os cantos */
+
+    /* Interação e Animação */
+    cursor: pointer;
+    /* Muda o cursor para a "mãozinha" */
+    transition: all 0.3s ease;
+    /* Transição suave para os efeitos */
+}
+
+button:hover {
+    /*  opacity: 0.8; */
+    background-color: #2980b9;
+    /* Tom de azul mais escuro */
+    transform: translateY(-2px);
+    /* Sobe o botão levemente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra projetada */
+}
+
+button:active {
+    /*  opacity: 0.6; */
+    transform: translateY(0);
+    /* Volta para a posição original */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Diminui a sombra */
+}
+
+button:focus {
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+    background-color: rgb(224, 223, 223);
+}
+
+
+
+#resultado {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 100px;
+    width: auto;
+    height: auto;
+    letter-spacing: 0px;
+    line-height: 100%;
+    margin: 0px 803px 29px 803px;
+}
