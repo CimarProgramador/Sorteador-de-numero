@@ -7,7 +7,7 @@ Construído com **HTML, CSS e JavaScript**, o projeto possui uma interface moder
 
 ## 🚀 Funcionalidades
 - Definir um número **mínimo** e **máximo** para o sorteio.
-- Escolher a **quantidade de sorteios**.
+- Escolher a **quantidade de sorteios**. (em construção)
 - Exibir o resultado com **alertas animados**.
 - Interface responsiva com **efeito neon** e fundo personalizado.
 - Feedback visual com destaque para o número sorteado.
